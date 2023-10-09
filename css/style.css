@@ -20,15 +20,33 @@ body {
     justify-content: center;
 }
 
+h1 {
+font-size: 22px;
+}
+
+h2 {
+font-size: 18px;
+}
+
+h3 {
+font-size: 17px;
+}
+
+p {
+font-size: 16px;
+}
 ul {
     margin: 0;
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 35px;
 }
 
 a {
@@ -116,7 +134,23 @@ header {
   header nav ul li:hover a {
     color: var(--main-color);
   }
+
+/******** info-gloup ***********/
+.info-gloup {
+    display: flex;
+    justify-content: space-between;
+}
+
+/********* headline ***********/
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
