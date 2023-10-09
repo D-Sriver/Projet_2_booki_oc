@@ -70,7 +70,46 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
-
+/******** header **********/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  
+  header #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header #logo img {
+    height: 19px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    padding: 25px 25px;
+    border-top: 4px solid transparent;
+  }
+  
+  header nav ul li:hover {
+    transition: 0.5s;
+    border-color: var(--main-color);
+  }
+  
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  header nav ul li:hover a {
+    color: var(--main-color);
+  }
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
