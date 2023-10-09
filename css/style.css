@@ -35,7 +35,7 @@ font-size: 17px;
 p {
 font-size: 16px;
 }
-a
+
 ul {
     margin: 0;
 }
@@ -146,15 +146,58 @@ header {
     gap: 35px;
     justify-content: space-between;
 }
-
+/* ************* search-bar ************* */
 .search-bar {
     display: flex;
+    gap: 24px;
     height: 50px;
-    justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
 }
 
+.search-bar input {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.search-bar input::placeholder {
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+
+}
+
+.fa-location-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--filter-bg-color);
+    border-radius: 15px 0px 0px 15px;
+    width: 49px;
+    height: 50px;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+.search {
+    border-radius: 0px 15px 15px 0px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+}
+
+/* ************** */
 .filter {
     display: flex;
     height: 50px;
