@@ -16,7 +16,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	display: flex;
+	display: flex;;
 	justify-content: center;
 }
 
@@ -43,6 +43,7 @@ ul {
 main {
 	display: flex;
 	flex-direction: column;
+    gap: 35px;
 }
 .main-container {
 	display: flex;
@@ -146,6 +147,21 @@ header nav ul li:hover a {
 	gap: 35px;
 	justify-content: space-between;
 }
+
+/********* headline ***********/
+
+.headline {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.headline h1,
+p {
+	margin: 0;
+}
+
 /* ************* search-bar ************* */
 .search-bar {
 	display: flex;
@@ -197,7 +213,11 @@ header nav ul li:hover a {
 	border: none;
 }
 
-/* ************** */
+.search:hover {
+background-color: var(--filter-bg-color);
+color: var(--main-color);
+}
+/* *******filter ******* */
 .filter {
 	display: flex;
 	height: 50px;
@@ -222,21 +242,25 @@ header nav ul li:hover a {
 .filter button:hover {
     background-color: var(--filter-bg-color);
 }
-/********* headline ***********/
 
-.headline {
+/* ********infobar********* */
+
+.info-bar {
+    display: flex;
+	align-items: center;
+    gap: 10px;
+}
+
+.fa-info {
 	display: flex;
-	gap: 8px;
-	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+    border : 2px solid var(--filter-bg-color);
+	border-radius: 25px;
+	width: 20px;
+	height: 20px;
 }
-
-.headline h1,
-p {
-	margin: 0;
-}
-
-/* ******* search-bar ******** */
 
 /****** Hebergements ***********/
 
