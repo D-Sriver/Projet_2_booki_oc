@@ -95,7 +95,6 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
 	display: flex;
-	align-items: center;
 	gap: 40px;
 	align-self: stretch;
 }
@@ -215,12 +214,12 @@ p {
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
-	height: 50px;
-	padding: 0 20px;
+	padding: 15px 15px;
 	cursor: pointer;
 	transition: 0.5s;
 	outline: none;
 	border: none;
+	transition: 0.3s;
 }
 
 .search:hover {
@@ -405,9 +404,9 @@ h3 {
 
 footer {
 	display: flex;
-	align-items: flex-start;
 	align-self: stretch;
 	background: var(--main-bg-color);
+	gap: 30px;
 }
 
 footer section {
@@ -421,11 +420,15 @@ footer section {
 }
 
 footer section ul {
+	display: flex;
+	flex-direction: column;
 	padding: 0;
+	gap: 15px;
+	text-decoration: none;
 }
-footer section ul li {
+
+footer li {
 	list-style: none;
-	margin-bottom: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -486,24 +489,40 @@ footer section ul li {
 		flex-direction: column;
 	}
 
-	header nav ul li {
-		padding: 25px 25px;
-		border-top: none;
-		border-bottom: 4px solid ;
+	header nav {
+		position: relative;
 	}
-	
+
+	header nav ul li {
+		border-top: none;
+		border-bottom: 4px solid transparent;
+	}
+
 	header nav ul li:hover {
 		transition: 0.5s;
+		border-bottom: 4px solid;
 		border-color: var(--main-color);
 	}
 
-	ul {
-		display: flex;
-		padding: 0px 50px 0px 50px;
-		list-style-type: none;
+	header nav ul {
+		padding: 0;
 		gap: 0px;
-		justify-content: space-around;
-		}
+	}
+
+	header nav ul li {
+		border-bottom: 4px solid var(--main-bg-color);    }
+
+	header nav ul li:nth-child(1) {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav ul li:nth-child(2) {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
 
 	.info-group {
 		padding: 0px 20px;
@@ -540,7 +559,7 @@ footer section ul li {
 	.filter button {
 		padding: 4px 19px 4px 19px;
 		height: 50px;
-		width: 160px;
+		width: 150px;
 		font-size: 14px;
 		border-radius: 25px;
 		align-items: center;
@@ -557,6 +576,10 @@ footer section ul li {
 	.hebergements-and-populaires section {
 		padding: 30px 20px;
 		border-radius: 0px;
+	}
+
+	.hebergements-and-populaires section:nth-child(1) {
+		background-color: transparent;
 	}
 
 	.block-filter {
@@ -602,5 +625,20 @@ footer section ul li {
 	}
 	.activites-card .card-subtitle {
 		height: 59px;
+	}
+
+	footer {
+		padding: 30px;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	footer section {
+		padding: 0;
+		border-radius: 0px;
+	}
+	footer section ul {
+		flex-direction: column;
+		gap: 15px;
 	}
 }
