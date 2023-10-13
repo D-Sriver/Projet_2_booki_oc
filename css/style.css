@@ -199,6 +199,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--filter-bg-color);
+	color: black;
 	border-radius: 15px 0px 0px 15px;
 	width: 49px;
 	height: 50px;
