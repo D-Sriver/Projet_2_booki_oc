@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
 	font-family: "Raleway", sans-serif;
+	scroll-behavior: smooth;
 }
 
 :root {
@@ -307,7 +308,7 @@ h3 {
 	border-radius: 20px 20px 0px 0px;
 	transition: 0.3s;
 	cursor: pointer;
-	height: 250px;
+	height: 140px;
 	width: 100%;
 	border-radius: 20px 20px 0px 0px;
 }
