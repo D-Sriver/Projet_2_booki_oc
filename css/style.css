@@ -71,7 +71,6 @@ a {
 	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 	transition: 0.4s;
 }
-
 .card:hover {
 	filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
 }
@@ -295,11 +294,21 @@ h3 {
 .hebergement-card {
 	gap: 30px;
 	display: flex;
+	width: 100%;
 }
 
+.hebergement-card a {
+	text-decoration: none;
+    width: 100%;
+}
 .hebergement-card img {
 	width: 100%;
 	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+	transition: 0.3s;
+	cursor: pointer;
+	height: 250px;
+	width: 100%;
 	border-radius: 20px 20px 0px 0px;
 }
 
