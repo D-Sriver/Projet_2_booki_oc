@@ -443,6 +443,16 @@ footer li {
 	list-style: none;
 }
 
+footer a {
+	transition: 0.3s;
+}
+
+footer a:hover {
+	padding: 0px 5px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
