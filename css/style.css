@@ -43,7 +43,7 @@ ul {
 main {
 	display: flex;
 	flex-direction: column;
-	padding: 0px 50px;
+	padding: 0px 45px;
 	margin: 0px;
 	gap: 35px;
 }
@@ -80,7 +80,7 @@ a {
 }
 
 .card-title {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .euro {
@@ -197,7 +197,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--filter-bg-color);
+	background-color: var(--main-bg-color);
 	color: black;
 	border-radius: 15px 0px 0px 15px;
 	width: 49px;
@@ -295,6 +295,10 @@ h3 {
 	gap: 30px;
 	display: flex;
 	width: 100%;
+}
+
+.hebergement-card .card {
+	min-height: 260px;
 }
 
 .hebergement-card a {
@@ -498,7 +502,7 @@ footer a:hover {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 	main {
 		padding: 0px;
 	}
