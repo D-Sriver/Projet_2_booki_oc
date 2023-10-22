@@ -80,7 +80,7 @@ a {
 }
 
 .card-title {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .euro {
@@ -298,7 +298,7 @@ h3 {
 }
 
 .hebergement-card .card {
-	min-height: 277px;
+	min-height: 267px;
 }
 
 .hebergement-card a {
@@ -541,9 +541,12 @@ footer a:hover {
 	}
 
 	.info-group {
-		padding: 0px 20px;
+		padding: 35px 20px;
 	}
 
+	main {
+		gap: 0;
+	}
 	.menu {
 		flex-direction: row;
 		justify-content: space-between;
@@ -599,6 +602,9 @@ footer a:hover {
 		background-color: transparent;
 	}
 
+	.hebergements {
+		background-color: transparent !important;
+	}
 	.block-filter {
 		align-items: center;
 		justify-content: center;
